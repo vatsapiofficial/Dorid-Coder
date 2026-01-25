@@ -2,6 +2,8 @@ import fs from 'fs';
 import vm from 'vm';
 import path from 'path';
 import { createRequire } from 'module';
+import webassemblyToolkit from 'webassembly';
+import webassemblyjs from 'webassemblyjs';
 
 /**
  * Runs a Jupyter Notebook (.ipynb) file.
@@ -53,6 +55,9 @@ export async function runNotebook(filePath) {
     URLSearchParams,
     TextEncoder,
     TextDecoder,
+    WebAssembly,
+    wasm: webassemblyToolkit,
+    webassemblyjs,
     setTimeout,
     setInterval,
     setImmediate,

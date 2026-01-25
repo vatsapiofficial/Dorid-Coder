@@ -24,6 +24,8 @@
   "author": "vatsapiofficial",
   "license": "MIT",
   "dependencies": {
-    "commander": "^14.0.2"
+    "commander": "^14.0.2",
+    "webassembly": "^0.11.0",
+    "webassemblyjs": "^1.14.1"
   }
 }

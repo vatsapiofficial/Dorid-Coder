@@ -9,6 +9,7 @@ Built for developers who want to execute JavaScript-based notebooks directly fro
 - ✅ **Simple CLI**: Run any `.ipynb` file with a single command.
 - ✅ **Sandboxed Execution**: Code runs in a secure `vm` context.
 - ✅ **Captures Console Output**: All `console.log`, `error`, etc., are captured and displayed.
+- ✅ **Built-in WebAssembly Support**: Includes `WebAssembly` globals and integrated toolkits like `wasm` and `webassemblyjs`.
 - ✅ **Minimal Dependencies**: Fast and lightweight.
 
 ## Installation
@@ -32,7 +33,7 @@ npx dorid-coder <your-notebook>.ipynb
 To run a notebook:
 
 ```bash
-dorid-coder run my-notebook.ipynb
+dorid-coder my-notebook.ipynb
 ```
 
 ### Programmatic API
@@ -43,6 +44,17 @@ You can also use `dorid-coder` in your own Node.js projects:
 import { runNotebook } from 'dorid-coder';
 
 await runNotebook('./path/to/notebook.ipynb');
+```
+
+### WebAssembly Support
+
+`dorid-coder` comes with built-in WebAssembly support. You can use the standard `WebAssembly` API, or the included `wasm` and `webassemblyjs` toolkits:
+
+```javascript
+// In your notebook cell:
+wasm.load("module.wasm").then(module => {
+  // ...
+});
 ```
 
 ## Notebook Format
