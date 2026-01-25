@@ -1,0 +1,29 @@
+{
+  "name": "dorid-coder",
+  "version": "0.1.0",
+  "description": "A lightweight notebook runner for Node.js",
+  "main": "src/runner.js",
+  "type": "module",
+  "bin": {
+    "dorid-coder": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vatsapiofficial/Dorid-Coder.git"
+  },
+  "keywords": [
+    "notebook",
+    "runner",
+    "ipynb",
+    "javascript",
+    "node"
+  ],
+  "author": "vatsapiofficial",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.2"
+  }
+}
