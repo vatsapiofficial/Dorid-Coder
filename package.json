@@ -8,7 +8,8 @@
     "dorid-coder": "./src/cli.js"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,9 @@
     "commander": "^14.0.2",
     "webassembly": "^0.11.0",
     "webassemblyjs": "^1.14.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1"
   }
 }

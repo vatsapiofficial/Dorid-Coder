@@ -61,6 +61,24 @@ wasm.load("module.wasm").then(module => {
 
 `dorid-coder` supports the standard Jupyter Notebook format (v4). It specifically executes cells of type `code` where the language is JavaScript.
 
+## Development
+
+### Build
+
+To bundle the project using Webpack:
+
+```bash
+npm run build
+```
+
+### Test
+
+To run the test suite:
+
+```bash
+npm test
+```
+
 ## Why "Dorid"?
 
 "Dorid" is inspired by the agility and adaptability of sea slugs (Dorididae) and also pays homage to the "Droid" ecosystem, signifying a tool that is both robust and versatile for mobile and desktop environments alike.
